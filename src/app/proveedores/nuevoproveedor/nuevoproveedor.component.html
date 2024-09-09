@@ -1,0 +1,32 @@
+<div class="card my-5">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <h3 class="mb-0">{{titulo}}</h3>
+      </div>
+      <div class="row">
+        <div class="form-group mb-3">
+            <label class="form-label" for="firstName">Nombre de la empresa</label>
+            <input type="text" [value]="titulo" [(ngModel)]="Nombre_Empresa" class="form-control" id="Nombre_Empresa" placeholder="Nombre Empresa" />
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label class="form-label" for="company">Dirección</label>
+        <input type="text" class="form-control" [(ngModel)]="Direccion" placeholder="Dirección" />
+      </div>
+      <div class="form-group mb-3">
+        <label class="form-label" for="emailAddress">Teléfono</label>
+        <input type="email" class="form-control" [(ngModel)]="Telefono" id="Telefono" placeholder="Teléfono" />
+      </div>
+      <div class="form-group mb-3">
+        <label class="form-label" for="password">Contacto Empresa</label>
+        <input type="text" class="form-control" [(ngModel)]="Contacto_Empresa" id="Contacto_Empresa" placeholder="Contacto Empresa" />
+      </div>
+      <div class="form-group mb-3">
+        <label class="form-label" for="password">Teléfono Contacto</label>
+        <input type="text" class="form-control" [(ngModel)]="Teleofno_Contacto" id="Teleofno_Contacto" placeholder="Teléfono Contacto" />
+      </div>
+      <div class="d-grid mt-3">
+        <button type="button" (click)="grabar()" class="btn btn-primary">{{tituloBoton}}</button>
+      </div>
+    </div>
+  </div>
